@@ -1,0 +1,20 @@
+@charset "utf-8";
+body
+{padding:0;
+margin:0;}
+img
+{position: absolute}
+.sofa{left:400px;
+top:200px;}
+.glitch{
+	left:727px;
+	top: 288px;
+}
+.ever{
+	left:100px;
+	top:50px;
+}
+.expect{
+	left:300px;
+	top:100px;
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My cat wants to kill me</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div>
+<input type="button" onclick="demoVisibility()" value="click to see stuff" height="50" class="button"/>
+<input id="id11" type="button" onclick="stopPlay()" value="Are you leaving me?" class="button2" height="100"/>
+</div>
+
+<audio id="id-audio" controls preload hidden>
+<source src="Audio/Sad Satan2.MP3" type="audio/aac">
+</audio>
+
+<img id="id8" src="Images/cat.png" height="562.2" class="cat" alt=""/>
+<img src="Images/copyeyes.png" height="60px" onclick="this.src='Images/eyes.png'" class="eyes" alt="" />
+
+<img src="Images/Untitled-1_0007_My-cat-is-a-good-boy.-A-very-good-boy-indeed.---.png" height="35px" class="good-boy" alt=""/>
+<img id="id2" src="Images/Untitled-1_0006_He-is-very-smart.-and-always-hungry.-.png" height="35" class="smart-boy" alt=""/>
+<img id="id3" src="Images/Untitled-1_0005_A-month-ago-he-escaped-from-the-house,-and-when-he-comes-back,-.png" class="escape-boy" height="70" alt=""/>
+<img id="id4" src="Images/Untitled-1_0004_I-think-he-was-in-another-dimension..png" class="dimension-boy" height="30" alt=""/>
+<img id="id5" src="Images/Untitled-1_0003_Because-now-when-I-look-in-his-eyes.png" class="look-boy" height="35" alt=""/>
+<img id="id6" src="Images/FIRE_0002_I-SEE-AN-ENDLESS-FIRE-OF..png" class="fire-boy" height="30" alt=""/>
+<img id="id7" src="Images/_0001_A--FIRE.FIRE.-F.I.R.E.---..OF..-A.F.I.R.E..F.I.R.E.-O.F...I.R.E..png" height="300" class="afire" alt=""/>
+<img id="id9" src="Images/_0000_---HELL.png" height="300" class="afire2" alt=""/>
+<img id="id10" src="Images/CAT_0000_^o.o^.png" height="35" onclick="this.src='Images/MOSHED-2021-10-17-4-44-40.gif'; height='1400'; width='2800';" class="CAT" alt=""/>
+<script>
+i=2;
+function demoVisibility(){
+if(i == 2) {
+document.getElementById("id-audio").play();
+}
+document.getElementById("id"+i++).style.visibility="visible";
+}
+function stopPlay(){
+document.getElementById("id-audio").pause();
+	self.location.href="Untitled-1.html";
+}
+
+function visible2(){
+document.getElementById("id9").style.visibility="visible";
+}
+(function(){
+var oImg = document.getElementById("id9");
+var alpha = 30;
+oImg.onmouseover = function(){show(100,5) ;}
+oImg.onmouseout = function(){show(30,-5); }
+var handler = null;
+
+    function show(target,speed){
+        clearInterval(handler);
+        handler = setInterval(function(){
+            if(alpha == target){
+                clearInterval(handler);
+            }
+            else {
+                alpha+=speed;
+                oImg.style.opacity = alpha/100;
+                oImg.style.filter = 'alpha(opacity:' + alpha +')';
+            }
+
+        },60)
+    }
+})()
+</script>
+</body>
+</html>

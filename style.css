@@ -1,0 +1,67 @@
+@charset "utf-8";
+body
+{padding:0;
+margin:0;}
+img
+{position: absolute}
+.cat
+{left: 1500px;
+top:670px;
+visibility: hidden;}
+.eyes
+{left: 1983px;
+top: 808px;
+z-index: 101;}
+.button
+{left:50%;
+top:50%;
+	z-index: 100000;
+position:fixed;
+}
+.good-boy
+{left:0px;
+top:50px;}
+.smart-boy
+{left:100px;
+top:150px;
+visibility: hidden;}
+.escape-boy
+{left:130px;
+top:250px;
+visibility: hidden;}
+.dimension-boy
+{left:230px;
+top:300px;
+visibility: hidden;}
+.look-boy
+{left:260px;
+top:400px;
+visibility: hidden;}
+.fire-boy
+{left:560px;
+top:600px;
+visibility: hidden;}
+.afire
+{left:900px;
+top:620px;
+visibility: hidden;}
+.afire2
+{left: 35%;
+top: 30%;
+visibility:hidden;
+position:fixed;}
+.button2{
+	visibility:hidden;
+	
+}
+.CAT
+{
+	left:700;
+	top:200;
+	visibility:hidden;
+	z-index: 100000
+}
+.lose{
+	left:500px;
+	top:500px;
+}
